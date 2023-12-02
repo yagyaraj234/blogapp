@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Blogging</title>
+  </head>
+  <body>
+    <header class="bg-gray-800 text-white">
+      <nav
+        class="flex items-center justify-between py-4 px-8 md:px-16 lg:px-32"
+      >
+        <div class="flex items-center">
+          <!-- Logo or site name -->
+          <a href="index.html" class="text-xl font-bold">Blogger.in</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <!-- Navigation links -->
+          <a href="/index.html" class="hover:text-gray-300">Home</a>
+          <a href="blog.html" class="hover:text-gray-300">Blogs</a>
+          <a href="contact.html" class="hover:text-gray-300">Contact</a>
+          <a href="about.html" class="hover:text-gray-300">About Us</a>
+        </div>
+        <!-- Responsive menu button for smaller screens -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Responsive menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-4 pt-2 pb-4 space-y-4">
+          <a href="index.html" class="block hover:text-gray-300">Home</a>
+          <a href="blog.html" class="block hover:text-gray-300">Blogs</a>
+          <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+          <a href="about.html" class="block hover:text-gray-300">About Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About us -->
+    <div class="container mx-auto py-8 px-4">
+      <h1 class="text-3xl font-bold mb-6 text-center">Our Company</h1>
+
+      <!-- Company Information Section -->
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">About Us</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
+          at ante eu mattis. Vestibulum id nisi ac lectus tincidunt dignissim.
+          Quisque ac lorem vitae dui rutrum convallis. Nulla facilisi. Donec
+          auctor non libero non accumsan.
+        </p>
+      </div>
+
+      <!-- Mission Section -->
+      <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Our mission is to provide innovative solutions that meet our
+          customers' needs, uphold the highest standards of integrity in all of
+          our actions, and foster a positive working environment where
+          creativity and collaboration thrive.
+        </p>
+      </div>
+
+      <!-- Team Section -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-semibold mb-4">Our Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Team Member Cards -->
+          <div class="border border-gray-200 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">John Doe</h3>
+            <p class="text-gray-700 mb-2">Position: CEO</p>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Jane Smith</h3>
+            <p class="text-gray-700 mb-2">Position: COO</p>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="border border-gray-200 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Mark Johnson</h3>
+            <p class="text-gray-700 mb-2">Position: CTO</p>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <!-- Add more team member cards as needed -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
