@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-gray-800 text-white">
+      <nav
+        class="flex items-center justify-between py-4 px-8 md:px-16 lg:px-32"
+      >
+        <div class="flex items-center">
+          <!-- Logo or site name -->
+          <a href="#" class="text-xl font-bold">Blogger.in</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-6">
+          <!-- Navigation links -->
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">Blogs</a>
+          <a href="#" class="hover:text-gray-300">Contact</a>
+          <a href="#" class="hover:text-gray-300">About Us</a>
+        </div>
+        <!-- Responsive menu button for smaller screens -->
+        <div class="md:hidden">
+          <button id="mobile-menu-toggle" class="focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <!-- Responsive menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-4 pt-2 pb-4 space-y-4">
+          <a href="#" class="block hover:text-gray-300">Home</a>
+          <a href="#" class="block hover:text-gray-300">Blogs</a>
+          <a href="#" class="block hover:text-gray-300">Contact</a>
+          <a href="#" class="block hover:text-gray-300">About Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Recent Blog Scetion Start -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Recent Blogs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Blog Cards - Placeholder content -->
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">Blog Title 1</h3>
+            <p class="text-gray-600">
+              Short description of the blog content. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">Blog Title 2</h3>
+            <p class="text-gray-600">
+              Short description of the blog content. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4">Blog Title 3</h3>
+            <p class="text-gray-600">
+              Short description of the blog content. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recent Blog Scetion End -->
+
+    <!-- Client Feedback/Testimonials Section -->
+    <section class="py-12 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Client Feedback</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg shadow-md p-2">
+            <div class="flex gap-5">
+              <div class="flex items-center justify-center gap-5">
+                <img
+                  src="https://via.placeholder.com/150"
+                  alt="Brand Logo"
+                  class="h-11 w-28 rounded-full"
+                />
+              </div>
+
+              <blockquote class="text-sm text-gray-700 italic text-justify">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                at justo in nunc rutrum blandit."
+              </blockquote>
+            </div>
+            <p class="text-gray-600 mt-4 text-end text-xs">- Sam Charles</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-2 hidden md:block">
+            <div class="flex gap-5">
+              <div class="flex items-center justify-center gap-5">
+                <img
+                  src="https://via.placeholder.com/150"
+                  alt="Brand Logo"
+                  class="h-11 w-28 rounded-full"
+                />
+              </div>
+
+              <blockquote class="text-sm text-gray-700 italic text-justify">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                at justo in nunc rutrum blandit."
+              </blockquote>
+            </div>
+            <p class="text-gray-600 mt-4 text-end text-xs">- Sam Charles</p>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-2">
+            <div class="flex gap-5">
+              <div class="flex items-center justify-center gap-5">
+                <img
+                  src="https://via.placeholder.com/150"
+                  alt="Brand Logo"
+                  class="h-11 w-28 rounded-full"
+                />
+              </div>
+
+              <blockquote class="text-sm text-gray-700 italic text-justify">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                at justo in nunc rutrum blandit."
+              </blockquote>
+            </div>
+            <p class="text-gray-600 mt-4 text-end text-xs">- Sam Charles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Partners Section Start -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Our Partners</h2>
+        <div class="grid grid-cols-4 gap-6">
+          <!-- Brand Logos  -->
+          <div class="flex items-center justify-center rounded-full">
+            <img
+              src="https://source.unsplash.com/nature/150*150"
+              alt="Brand Logo"
+              class="h-12 w-12 rounded-full"
+            />
+          </div>
+          <div class="flex items-center justify-center rounded-full">
+            <img
+              src="https://source.unsplash.com/logo/150*150"
+              alt="Brand Logo"
+              class="h-12 w-12 rounded-full"
+            />
+          </div>
+          <div class="flex items-center justify-center rounded-full">
+            <img
+              src="https://source.unsplash.com/person/150*150"
+              alt="Brand Logo"
+              class="h-12 w-12 rounded-full"
+            />
+          </div>
+          <div class="flex items-center justify-center rounded-full">
+            <img
+              src="https://source.unsplash.com/laptop/150*150"
+              alt="Brand Logo"
+              class="h-12 w-12 rounded-full"
+            />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Our Partners Section End-->
+
+    <!-- Footer Section Start  -->
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <!-- Company Location Details -->
+          <div class="mb-4 md:mb-0">
+            <h4 class="text-lg font-semibold">Our Location</h4>
+            <p class="text-gray-400">123 Company Address, City, Country</p>
+            <p class="text-gray-400">
+              Phone: +123456789 | Email: info@example.com
+            </p>
+          </div>
+          <!-- Helpful Links -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4 md:mb-2">Helpful Links</h4>
+            <ul>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <!-- Add more links as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Section End  -->
+
+    <!-- Include JavaScript  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
